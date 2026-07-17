@@ -8,7 +8,7 @@ O projeto simula a experiência física de folhear um álbum de figurinhas de pa
 
 ## Objetivo do Projeto
 
-O objetivo principal é construir uma aplicação frontend interativa integrada com recursos modernos do navegador euma API backend (FastAPI) para o carregamento dinâmico das figurinhas. A aplicação serve de base para o aprendizado de arquitetura web, manipulação do DOM, estilização avançada, síntese de áudio no navegador e integrações de APIs.
+O objetivo foi construir uma aplicação frontend interativa integrada com recursos modernos do navegador e uma API backend (FastAPI) para o carregamento dinâmico das figurinhas. A aplicação serve de base para o aprendizado de arquitetura web, manipulação do DOM, estilização avançada, síntese de áudio no navegador e integrações de APIs.
 
 ---
 
