@@ -10,22 +10,19 @@ Desenvolver uma aplicação frontend interativa que demonstra arquitetura web mo
 
 ```
 code/
-├── assets/figurinhas/     # Imagens das figurinhas
-├── index.html             # Estrutura HTML
-├── style.css              # Estilos e animações
-└── app.js                 # Lógica interativa
+├──
 ```
 
 ## 🛠️ Tecnologias
 
-| Tecnologia | Uso |
-|-----------|-----|
-| **HTML5** | Estruturação semântica |
-| **CSS3** | Layout (Flexbox/Grid), animações, gradientes |
-| **JavaScript (ES6+)** | Interatividade, requisições assíncronas |
-| **St.PageFlip** | Simulação de virada de páginas |
-| **Web Audio API** | Síntese de som de papel virando |
-| **FastAPI** | Backend (configuração futura) |
+| Tecnologia            | Uso                                          |
+| --------------------- | -------------------------------------------- |
+| **HTML5**             | Estruturação semântica                       |
+| **CSS3**              | Layout (Flexbox/Grid), animações, gradientes |
+| **JavaScript (ES6+)** | Interatividade, requisições assíncronas      |
+| **St.PageFlip**       | Simulação de virada de páginas               |
+| **Web Audio API**     | Síntese de som de papel virando              |
+| **FastAPI**           | Backend (configuração futura)                |
 
 ## 🚀 Como Usar
 
