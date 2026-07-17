@@ -14,4 +14,4 @@ O objetivo foi construir uma aplicação frontend interativa integrada com recur
 
 ## Interface
 
-![Interface](assets\gif\interface.gif)
+![Interface](assets/gif/interface.gif)
