@@ -38,7 +38,7 @@ O projeto está estruturado da seguinte forma:
 
 ## 🚦 Interface
 
-![Interface](assets/images/interface_1.png)
+![Interface](assets\image\interface_1.png)
 ---
 
 ## 🚦 Como Executar o Projeto
