@@ -11,7 +11,7 @@ Rodando direto usando a pasta do ambiente virtual (Recomendado no Windows):
 .venv\Scripts\uvicorn main:app --reload
 
 Ver no Chrome a aplicação: http://127.0.0.1:8000
-Ver a Documentação: http://127.0.0.1:8000/redoc -->
+Ver a Documentação: http://127.0.0.1:8000/doc -->
 
 2.  No Terminal: pip install fastapi
 
@@ -45,8 +45,4 @@ Ver a Documentação: http://127.0.0.1:8000/redoc -->
     - Mantenha tudo que já existe no arquivo
     - Adicione comentários em português
     - Não adicione nenhum endpoint além desses dois
-
----
-
-Abrir ambiente virtual:
-.\\.venv\\Scripts\\Activate.ps1
+    
