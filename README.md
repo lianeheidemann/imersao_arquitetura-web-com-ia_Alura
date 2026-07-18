@@ -38,7 +38,7 @@ página e as fontes são carregadas por CDN.
 
 ```text
 ├── backend/
-│   ├── .venv/           # Ambiente Virtual 
+│   ├── .venv/           # ambiente Virtual 
 │   ├── figurinhas/      # imagens servidas pela API
 │   └── main.py          # aplicação FastAPI
 ├── frontend/
