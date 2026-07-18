@@ -1,4 +1,4 @@
-# Alura Album - Copa do Mundo Tech
+# Alura Álbum - Copa do Mundo Tech
 
 Este projeto é um **álbum de figurinhas digital e interativo** temático de tecnologia, contendo grandes pioneiros da computação e inteligência artificial, além de instrutores e personalidades da Alura. Ele foi desenvolvido como parte da **Imersão de Arquitetura Web com IA da Alura**.
 
