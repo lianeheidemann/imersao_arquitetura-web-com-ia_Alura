@@ -13,11 +13,10 @@ Este projeto é um **álbum de figurinhas digital e interativo** temático de te
 ## Objetivo do Projeto
 
 Integrar aplicação frontend interativa com recursos modernos do navegador e uma API backend (FastAPI) para o carregamento dinâmico das figurinhas. A aplicação serve de base para o aprendizado de arquitetura web, manipulação do DOM, estilização avançada, síntese de áudio no navegador e integrações de APIs.
- 
-> - Desenvolvimento de backend em Python com FastAPI.  
-Criação e configuração de ambiente virtual Python (venv).  
-> - Implementação de API REST para listar e servir imagens ao frontend.  
-> - Integração entre frontend JavaScript e backend por requisições HTTP.
+ - Backend com Python e FastAPI
+- Ambiente virtual com venv
+- API REST para alimentação de imagens
+- Integração entre frontend e backend
 
 ---
 
