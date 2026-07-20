@@ -1,23 +1,38 @@
-**Alura Álbum - Copa do Mundo Tech**
+# Alura Álbum — Copa do Mundo Tech
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
+Álbum digital e interativo com temática de tecnologia, reunindo pioneiros da computação e da inteligência artificial, além de instrutores e personalidades da Alura.
 
-Este projeto é um **álbum de figurinhas digital e interativo** temático de tecnologia, contendo grandes pioneiros da computação e inteligência artificial, além de instrutores e personalidades da Alura. Ele foi desenvolvido como parte da **Imersão de Arquitetura Web com IA da Alura**.
+O projeto foi desenvolvido durante a **Imersão Arquitetura Web com IA, da Alura**, com foco na integração entre frontend e backend.
 
 ---
 
-## Objetivo do Projeto
+## Objetivo do projeto
 
-Integrar aplicação frontend interativa com recursos modernos do navegador e uma API backend (FastAPI) para o carregamento dinâmico das figurinhas. A aplicação serve de base para o aprendizado de arquitetura web, manipulação do DOM, estilização avançada, síntese de áudio no navegador e integrações de APIs.
- - Backend com Python e FastAPI
-- Ambiente virtual com venv
-- API REST para alimentação de imagens
+Aplicar conceitos de arquitetura web por meio de uma interface interativa conectada a uma API desenvolvida com Python e FastAPI.
+
+O backend disponibiliza as imagens das figurinhas por meio de uma API REST, enquanto o frontend consome esses dados e renderiza o conteúdo dinamicamente na página.
+
+---
+
+## Tecnologias e conceitos aplicados
+
+- HTML5
+- CSS3
+- JavaScript
+- Python
+- FastAPI
+- API REST
+- Manipulação do DOM
+- Requisições HTTP
+- Ambiente virtual com `venv`
 - Integração entre frontend e backend
-
+- Síntese de voz com recursos nativos do navegador
+  
 ---
 
 ## Interface
