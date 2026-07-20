@@ -1,4 +1,4 @@
-# Alura Álbum - Copa do Mundo Tech
+**Alura Álbum - Copa do Mundo Tech**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -12,7 +12,12 @@ Este projeto é um **álbum de figurinhas digital e interativo** temático de te
 
 ## Objetivo do Projeto
 
-O objetivo foi construir uma aplicação frontend interativa integrada com recursos modernos do navegador e uma API backend (FastAPI) para o carregamento dinâmico das figurinhas. A aplicação serve de base para o aprendizado de arquitetura web, manipulação do DOM, estilização avançada, síntese de áudio no navegador e integrações de APIs.
+Integrar aplicação frontend interativa com recursos modernos do navegador e uma API backend (FastAPI) para o carregamento dinâmico das figurinhas. A aplicação serve de base para o aprendizado de arquitetura web, manipulação do DOM, estilização avançada, síntese de áudio no navegador e integrações de APIs.
+ 
+> - Desenvolvimento de backend em Python com FastAPI.  
+Criação e configuração de ambiente virtual Python (venv).  
+> - Implementação de API REST para listar e servir imagens ao frontend.  
+> - Integração entre frontend JavaScript e backend por requisições HTTP.
 
 ---
 
