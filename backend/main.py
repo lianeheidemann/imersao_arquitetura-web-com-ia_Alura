@@ -59,12 +59,17 @@ def listar_figurinhas():
     return figurinhas
 
 
-@app.get("/figurinhas/{id}/imagem")
-def obter_imagem(id: int):
-    padrao = os.path.join(PASTA_IMAGENS, f"{id:02d}[!0-9]*")
-    arquivos = glob.glob(padrao)
+@app.get("/figurinhas/{id}")
+def obter_figurinha(id: int):
+    figurinha = next(
+        (figurinha for figurinha in figurinhas if figurinha["id"] == id),
+        None,
+    )
 
-    if not arquivos:
-        raise HTTPException(status_code=404, detail="Imagem não encontrada")
+    if figurinha is None:
+        raise HTTPException(status_code=404, detail="Figurinha não encontrada")
 
-    return FileResponse(arquivos[0])
+    return figurinha
+
+
+
