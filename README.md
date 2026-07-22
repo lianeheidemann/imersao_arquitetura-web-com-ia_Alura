@@ -32,7 +32,7 @@ O backend disponibiliza as imagens das figurinhas por meio de uma API REST, enqu
 - Ambiente virtual com `venv`
 - Integração entre frontend e backend
 - Síntese de voz com recursos nativos do navegador
-  
+
 ---
 
 ## Interface
@@ -57,7 +57,7 @@ página e as fontes são carregadas por CDN.
 
 ```text
 ├── backend/
-│   ├── .venv/           # ambiente Virtual 
+│   ├── .venv/           # ambiente Virtual
 │   ├── figurinhas/      # imagens servidas pela API
 │   └── main.py          # aplicação FastAPI
 ├── frontend/
@@ -88,12 +88,6 @@ No Windows (PowerShell):
 .\.venv\Scripts\Activate.ps1
 ```
 
-No Linux ou macOS:
-
-```bash
-source .venv/bin/activate
-```
-
 Instale as dependências:
 
 ```bash
@@ -122,6 +116,36 @@ execução para que as figurinhas sejam carregadas.
 > Abrir o `index.html` diretamente permite visualizar o álbum, mas um servidor
 > local é recomendado para evitar restrições do navegador.
 
+<details>
+    <summary>Se o ambiente virtual foi já criado anteriormente</summary>
+
+<br>Para visualizar o álbum, execute o backend e o frontend em dois terminais.
+
+No primeiro terminal, dentro de `backend`:
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn main:app --reload
+```
+
+No segundo terminal:
+
+```powershell
+cd ..\frontend
+..\backend\.venv\Scripts\python.exe -m http.server 5500
+```
+
+Depois, abra no navegador:
+
+- Álbum: http://localhost:5500
+- Documentação da API: http://localhost:8000/docs
+- Lista de figurinhas: http://localhost:8000/figurinhas
+
+Mantenha os dois terminais abertos. O frontend está configurado para buscar as imagens na API em `localhost:8000`.
+
+---
+
+</details>
+
 ## API
 
 | Método | Rota                      | Descrição                         |
@@ -129,7 +153,8 @@ execução para que as figurinhas sejam carregadas.
 | `GET`  | `/figurinhas`             | Lista as figurinhas disponíveis   |
 | `GET`  | `/figurinhas/{id}/imagem` | Retorna a imagem de uma figurinha |
 
-Com o backend em execução, a documentação interativa pode ser acessada 
+Com o backend em execução, a documentação interativa pode ser acessada em
+`http://localhost:8000/docs`.
 
 ## Configuração
 

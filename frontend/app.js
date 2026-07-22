@@ -66,6 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const soundToggle = document.getElementById("sound-toggle");
     const iconOn = soundToggle.querySelector(".sound-icon-on");
     const iconOff = soundToggle.querySelector(".sound-icon-off");
+    const themeToggle = document.getElementById("theme-toggle");
+    const iconSun = themeToggle.querySelector(".theme-icon-sun");
+    const iconMoon = themeToggle.querySelector(".theme-icon-moon");
 
     let isMuted = false;
     let pageFlip = null;
@@ -275,7 +278,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // 3. Audio State Controls
+    // 3. Theme State Controls (Modo Diurno / Noturno)
+    themeToggle.addEventListener("click", () => {
+        const temaAtual = document.body.getAttribute("data-theme");
+        const novoTema = temaAtual === "light" ? "dark" : "light";
+
+        document.body.setAttribute("data-theme", novoTema);
+
+        iconSun.classList.toggle("hidden", novoTema === "light");
+        iconMoon.classList.toggle("hidden", novoTema === "dark");
+    });
+
+    // 4. Audio State Controls
     soundToggle.addEventListener("click", () => {
         isMuted = !isMuted;
         if (isMuted) {
@@ -287,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 4. Navigation controls and events
+    // 5. Navigation controls and events
     if (pageFlip) {
         // Play turn sound when page starts flipping
         pageFlip.on("changeState", (e) => {
