@@ -17,6 +17,7 @@ app.add_middleware(
 
 PASTA_BASE = os.path.dirname(os.path.abspath(__file__))
 PASTA_IMAGENS = os.path.join(PASTA_BASE, "figurinhas")
+TOTAL_ALBUM = 30
 
 
 figurinhas = [
@@ -49,14 +50,24 @@ figurinhas = [
     {"id": 27, "nome": "Gi Space Coding", "categoria": "Brasil", "imagem_url": "/figurinhas/27/imagem"},
     {"id": 28, "nome": "Vinicius Neves", "categoria": "Brasil", "imagem_url": "/figurinhas/28/imagem"},
     {"id": 29, "nome": "Rafaela Ballerini", "categoria": "Brasil", "imagem_url": "/figurinhas/29/imagem"},
-    # Figurinha ainda indisponível: não há uma imagem com o prefixo "30".
-    # {"id": 30, "nome": "Você", "categoria": "Brasil", "imagem_url": "/figurinhas/30/imagem"},
+    {"id": 30, "nome": "Liane Heidemann", "categoria": "Brasil", "imagem_url": "/figurinhas/30/imagem"}
 ]
 
 
 @app.get("/figurinhas")
 def listar_figurinhas():
     return figurinhas
+
+
+@app.get("/figurinhas/total")
+def obter_total_figurinhas():
+    coladas = len(figurinhas)
+
+    return {
+        "total_album": TOTAL_ALBUM,
+        "coladas": coladas,
+        "faltam": TOTAL_ALBUM - coladas,
+    }
 
 
 @app.get("/figurinhas/{id}")
@@ -72,4 +83,16 @@ def obter_figurinha(id: int):
     return figurinha
 
 
+@app.get("/figurinhas/{id}/imagem")
+def obter_imagem_figurinha(id: int):
+    padrao = os.path.join(PASTA_IMAGENS, f"{id:02d}-*")
+    arquivos = glob.glob(padrao)
+
+    if not arquivos:
+        raise HTTPException(
+            status_code=404,
+            detail="Imagem da figurinha não encontrada"
+        )
+
+    return FileResponse(arquivos[0])
 
